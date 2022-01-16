@@ -1,0 +1,30 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+flake8 = "*"
+black = "*"
+
+[packages]
+gensim = "*"
+selenium = "*"
+chromedriver-binary = "~=71.0"
+beautifulsoup4 = "*"
+pyvirtualdisplay = "*"
+numpy = "*"
+pyyaml = "*"
+networkx = "*"
+
+[requires]
+python_version = "3.6"
+
+[pipenv]
+allow_prereleases = true
+
+[scripts]
+experiment = "python3 src/main.py"
+gen = "python3 src/script_generator.py"
+test = "python3 test_script/runner.py"
+type-check = "mypy src"

@@ -1,0 +1,399 @@
+# https://docs.joomla.org/Portal:Administrators
+
+# Article Management
+### Adding a new article
+### https://docs.joomla.org/Adding_a_new_article
+add_new_article:
+  - open "http://localhost:8080/administrator/index.php"
+  - enter "admin" in "username"
+  - enter "admin" in "password"
+  - click "Log in"
+  - ---
+  - click "Articles"
+  - ---
+  - click "New"
+  - ---
+  - enter "test article" in "title"
+  - enter "test alias" in "alias"
+  - select "News" from "Category"
+  - select "Guest" from "Access"
+  - click "Save & Close"
+
+### Adding a menu item which points to an Article
+### https://docs.joomla.org/Adding_a_menu_item_which_points_to_an_Article
+add_menu_item_to_article:
+  - open "http://localhost:8080/administrator/index.php"
+  - enter "admin" in "username"
+  - enter "admin" in "password"
+  - click "Log in"
+  - ---
+  - click "Menu(s)"
+  - ---
+  - click "Menu Items"
+  - ---
+  - click "New"
+  - ---
+  - click "Select of Menu Item Type"
+  - ---
+  - click "Articles"
+  - ---
+  - click "Single Article"
+  - ---
+  - click "Select of Select Article"
+  - ---
+  - click "test article"
+  - ---
+  - enter "test menu item 2" in "Menu Title"
+  - click "save & close"
+
+### Adding a menu link in an article
+### https://docs.joomla.org/J4.x:Adding_a_menu_link_in_an_article
+# There is not this feature in 3.9.2
+
+### Managing the Featured Items (Managing the front page)
+### https://docs.joomla.org/Managing_the_Featured_Items
+manage_featured_item:
+  - open "http://localhost:8080/administrator/index.php"
+  - enter "admin" in "username"
+  - enter "admin" in "password"
+  - click "Log in"
+  - ---
+  - click "Articles"
+  - ---
+  - click "test article"
+  - ---
+  - click "Yes of Featured"
+  - click "Save & Close"
+  - ---
+  - click "Featured Articles"
+
+### Scheduling an Article to be available only between certain dates
+### https://docs.joomla.org/Scheduling_an_Article_to_be_available_only_between_certain_dates
+schedule_article:
+  - open "http://localhost:8080/administrator/index.php"
+  - enter "admin" in "username"
+  - enter "admin" in "password"
+  - click "Log in"
+  - ---
+  - click "New Article"
+  - ---
+  - click "Publishing"
+  - ---
+  - enter "test article" in "Title"
+  - enter "03-10-2021 15:25:19" in "Start Publishing"
+  - enter "03-02-2021 15:25:46" in "End Publishing"
+  - click "Save & Close"
+
+### Restricting access to an Article
+### https://docs.joomla.org/Restricting_access_to_an_Article
+restrict_access_to_article:
+  - open "http://localhost:8080/administrator/index.php"
+  - enter "admin" in "username"
+  - enter "admin" in "password"
+  - click "Log in"
+  - ---
+  - click "Articles"
+  - ---
+  - click "test article"
+  - ---
+  - click "Permissions"
+  - ---
+  - click "Guest"
+  - ---
+  - select "Allowed" from "Allow or deny Delete for users in the Guest group"
+  - click "Save"
+  - click "Close"
+
+### Restricting access to "read more"
+### https://docs.joomla.org/Restricting_access_to_%22read_more%22
+resrict_access_to_read_more:
+  - open "http://localhost:8080/administrator/index.php"
+  - enter "admin" in "username"
+  - enter "admin" in "password"
+  - click "Log in"
+  - ---
+  - click "Articles"
+  - ---
+  - click "test article"
+  - ---
+  - click "Options"
+  - ---
+  - select "Yes" from "Show Unauthorized Links"
+  - select "Hide" from "Show Intro Text"
+  - click "Save & Close"
+
+### Article email and print icon settings
+### https://docs.joomla.org/Article_email_and_print_icon_settings
+setting_email_print_icon:
+  - open "http://localhost:8080/administrator/index.php"
+  - enter "admin" in "username"
+  - enter "admin" in "password"
+  - click "Log in"
+  - ---
+  - click "Articles"
+  - ---
+  - click "test article"
+  - ---
+  - click "Options"
+  - ---
+  - select "Hide" from "Show Icons"
+  - select "Hide" from "Show Print"
+  - select "Hide" from "Show Email"
+  - click "Save & Close"
+
+### Removing author name, creation date or update date from all articles
+### https://docs.joomla.org/Removing_author_name,_creation_date_or_update_date_from_all_articles
+show_hide_author_and_date:
+  - open "http://localhost:8080/administrator/index.php"
+  - enter "admin" in "username"
+  - enter "admin" in "password"
+  - click "Log in"
+  - ---
+  - click "Articles"
+  - ---
+  - click "Options"
+  - ---
+  - click "Hide of Show Author"
+  - click "Show of Show Create Date"
+  - click "Show of Show Modify Date"
+  - click "Save & Close"
+
+### Moving an Article to the archive
+### https://docs.joomla.org/Moving_an_Article_to_the_archive
+archive_article:
+  - open "http://localhost:8080/administrator/index.php"
+  - enter "admin" in "username"
+  - enter "admin" in "password"
+  - click "Log in"
+  - ---
+  - click "Articles"
+  - ---
+  - click "checkbox of test article"
+  - click "Archive"
+
+### Deleting an Article
+### https://docs.joomla.org/Deleting_an_Article
+delete_article:
+  - open "http://localhost:8080/administrator/index.php"
+  - enter "admin" in "username"
+  - enter "admin" in "password"
+  - click "Log in"
+  - ---
+  - click "Articles"
+  - ---
+  - click "checkbox of test article"
+  - click "Trash"
+
+# menu management
+
+## Adding a new menu
+## https://docs.joomla.org/J3.x:Adding_a_new_menu
+add_menu:
+  - open "http://localhost:8080/administrator/index.php"
+  - enter "admin" in "username"
+  - enter "admin" in "password"
+  - click "Log in"
+  - ---
+  - click "Menu(s)"
+  - ---
+  - click "New"
+  - ---
+  - enter "test menu" in "Title"
+  - enter "test menu type" in "Menu Type"
+  - enter "test description" in "description"
+  - click "save"
+  - click "close"
+
+## Adding a new menu item
+## https://docs.joomla.org/Adding_a_new_menu_item
+add_menu_item:
+  - open "http://localhost:8080/administrator/index.php"
+  - enter "admin" in "username"
+  - enter "admin" in "password"
+  - click "Log in"
+  - ---
+  - click "Menu(s)"
+  - ---
+  - click "Menu Items"
+  - ---
+  - click "New"
+  - ---
+  - enter "test menu item 2" in "Menu Title"
+  - select "New Window With Navigation" from "Target Window"
+  - select "Main Menu" from "Menu"
+  - click "Select of Menu Item Type"
+  - ---
+  - click "Configuration"
+  - ---
+  - click "Display Template Options"
+  - ---
+  - click "save & close"
+
+## Moving a menu to a different position
+## https://docs.joomla.org/J3.x:Moving_a_menu_to_a_different_position
+move_menu:
+  - open "http://localhost:8080/administrator/index.php"
+  - enter "admin" in "username"
+  - enter "admin" in "password"
+  - click "Log in"
+  - ---
+  - click "Extensions"
+  - ---
+  - click "Modules"
+  - ---
+  - click "Main Menu"
+  - ---
+  - select "position-0" from "Position"
+  - click "save & close"
+
+## Menus Menu Item Article Category Blog
+## https://docs.joomla.org/Help39:Menus_Menu_Item_Article_Category_Blog
+menu_item_blog:
+  - open "http://localhost:8080/administrator/index.php"
+  - enter "admin" in "username"
+  - enter "admin" in "password"
+  - click "Log in"
+  - ---
+  - click "Menu(s)"
+  - ---
+  - click "Menu Items"
+  - ---
+  - click "New"
+  - ---
+  - enter "test menu title 3" in "Menu title"
+  - click "Select of Menu Item Type"
+  - ---
+  - click "Articles"
+  - ---
+  - click "Category Blog"
+  - ---
+  - click "Select of Choose a Category"
+  - ---
+  - click "News"
+  - ---
+  - click "save & close"
+
+## Setting user registration policy
+## https://docs.joomla.org/Setting_user_registration_policy
+set_user_registration_policy:
+  - open "http://localhost:8080/administrator/index.php"
+  - enter "admin" in "username"
+  - enter "admin" in "password"
+  - click "Log in"
+  - ---
+  - click "Global"
+  - ---
+  - click "Users"
+  - ---
+  - click "Yes of Allow User Registration"
+  - click "Save & Close"
+
+## Customising the Login Form module
+## https://docs.joomla.org/Customising_the_Login_Form_module
+custom_login_form_module:
+  - open "http://localhost:8080/administrator/index.php"
+  - enter "admin" in "username"
+  - enter "admin" in "password"
+  - click "Log in"
+  - ---
+  - click "Extensions"
+  - ---
+  - click "Module"
+  - ---
+  - click "Login Form"
+  - ---
+  - enter "test pre text" in "Pre-text"
+  - select "Icons" from "Display labels"
+  - click "Save & Close"
+
+# user management
+
+## Adding a new user
+## https://docs.joomla.org/Adding_a_new_user
+add_new_user:
+  - open "http://localhost:8080/administrator/index.php"
+  - enter "admin" in "username"
+  - enter "admin" in "password"
+  - click "Log in"
+  - ---
+  - click "Users"
+  - ---
+  - click "New"
+  - ---
+  - enter "test name" in "Name"
+  - enter "test login name" in "Login Name"
+  - enter "password" in "Password"
+  - enter "password" in "Confirm Password"
+  - enter "test@email.com" in "Email"
+  - click "Blocked"
+  - click "Save & Close"
+
+## Changing user groups
+## https://docs.joomla.org/Changing_user_groups
+change_user_group:
+  - open "http://localhost:8080/administrator/index.php"
+  - enter "admin" in "username"
+  - enter "admin" in "password"
+  - click "Log in"
+  - ---
+  - click "Users"
+  - ---
+  - click "User Groups"
+  - ---
+  - click "Author"
+  - ---
+  - enter "Author" in "Group Title"
+  - select "- Registered" from "Group Parent"
+  - click "Save & Close"
+
+## Resetting a user password
+## https://docs.joomla.org/Resetting_a_user_password
+reset_user_password:
+  - open "http://localhost:8080/administrator/index.php"
+  - enter "admin" in "username"
+  - enter "admin" in "password"
+  - click "Log in"
+  - ---
+  - click "Users"
+  - ---
+  - click "Super User"
+  - ---
+  - enter "admin" in "Password"
+  - enter "admin" in "Confirm Password"
+  - click "Save"
+  - click "Close"
+
+## Listing a user on a contacts page
+## https://docs.joomla.org/Listing_a_user_on_a_contacts_page
+list_user_on_contacts:
+  - open "http://localhost:8080/administrator/index.php"
+  - enter "admin" in "username"
+  - enter "admin" in "password"
+  - click "Log in"
+  - ---
+  - click "Components"
+  - ---
+  - click "Contacts"
+  - ---
+  - click "New"
+  - ---
+  - enter "test user" in "Name"
+  - enter "00000000000" in "Mobile"
+  - enter "test country" in "Country"
+  - select "Uncategorised" from "Category"
+  - click "Save & Close"
+
+## Dealing with a problem user
+## https://docs.joomla.org/Dealing_with_a_problem_user
+deal_with_problem_user:
+  - open "http://localhost:8080/administrator/index.php"
+  - enter "admin" in "username"
+  - enter "admin" in "password"
+  - click "Log in"
+  - ---
+  - click "Users"
+  - ---
+  - click "test name"
+  - ---
+  - click "Blocked"
+  - click "Save & Close"

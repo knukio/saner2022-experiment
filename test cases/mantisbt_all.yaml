@@ -1,0 +1,514 @@
+# manage issue
+
+# Create Issue
+# https://www.mantisbt.org/docs/master/en-US/Admin_Guide/html-desktop/#admin.lifecycle.create
+create_issue:
+  - open "http://localhost:8989/login_page.php"
+  - enter "administrator" in "username"
+  - click "login"
+  - ---
+  - enter "root" in "password"
+  - click "login"
+  - ---
+  - click "Report Issue"
+  - ---
+  - select "[All Projects] General" from "Category"
+  - select "major" from "Severity"
+  - enter "test summary" in "Summary"
+  - enter "test description" in "Description"
+  - click "private"
+  - click "Submit Issue"
+
+# Monitor Issue
+# https://www.mantisbt.org/docs/master/en-US/Admin_Guide/html-desktop/#admin.pages.monitor
+monitor_issue:
+  - open "http://localhost:8989/login_page.php"
+  - enter "administrator" in "username"
+  - click "login"
+  - ---
+  - enter "root" in "password"
+  - click "login"
+  - ---
+  - click "View Issues"
+  - ---
+  - click "0000013"
+  - ---
+  - click "Monitor"
+
+# Assign to me
+# https://www.mantisbt.org/docs/master/en-US/Admin_Guide/html-desktop/#admin.pages.assigntome
+assign_issue:
+  - open "http://localhost:8989/login_page.php"
+  - enter "administrator" in "username"
+  - click "login"
+  - ---
+  - enter "root" in "password"
+  - click "login"
+  - ---
+  - click "View Issues"
+  - ---
+  - click "0000013"
+  - ---
+  - select "[Myself]" from "Assign To:"
+  - click "Assign To:"
+
+# Edit Issue
+# https://www.mantisbt.org/docs/master/en-US/Admin_Guide/html-desktop/#admin.pages.issueedit
+edit_issue:
+  - open "http://localhost:8989/login_page.php"
+  - enter "administrator" in "username"
+  - click "login"
+  - ---
+  - enter "root" in "password"
+  - click "login"
+  - ---
+  - click "View Issues"
+  - ---
+  - click "0000013"
+  - ---
+  - click "Edit"
+  - ---
+  - select "new" from "status"
+  - enter "new description" in "description"
+  - enter "new note" in "Add Note"
+  - click "Update Information"
+
+# Resolve Issue
+# https://www.mantisbt.org/docs/master/en-US/Admin_Guide/html-desktop/#admin.pages.resolve
+resolve_issue:
+  - open "http://localhost:8989/login_page.php"
+  - enter "administrator" in "username"
+  - click "login"
+  - ---
+  - enter "root" in "password"
+  - click "login"
+  - ---
+  - click "View Issues"
+  - ---
+  - click "0000013"
+  - ---
+  - select "resolved" from "Change Status To:"
+  - click "Change Status To:"
+  - ---
+  - select "fixed" from "Resolution"
+  - select "administrator" from "Assigned to:"
+  - click "private"
+  - click "Resolve Issue"
+
+# Close Issue
+# https://www.mantisbt.org/docs/master/en-US/Admin_Guide/html-desktop/#admin.pages.close
+close_issue:
+  - open "http://localhost:8989/login_page.php"
+  - enter "administrator" in "username"
+  - click "login"
+  - ---
+  - enter "root" in "password"
+  - click "login"
+  - ---
+  - click "View Issues"
+  - ---
+  - click "0000013"
+  - ---
+  - click "Close"
+  - ---
+  - select "administrator" from "Assigned To"
+  - enter "test note" in "Add Note"
+  - click "Close Issue"
+
+# Reopen Issue
+# https://www.mantisbt.org/docs/master/en-US/Admin_Guide/html-desktop/#admin.pages.reopen
+reopen_issue:
+  - open "http://localhost:8989/login_page.php"
+  - enter "administrator" in "username"
+  - click "login"
+  - ---
+  - enter "root" in "password"
+  - click "login"
+  - ---
+  - click "View Issues"
+  - ---
+  - click "Hide Status"
+  - ---
+  - select "[none]" from "Hide Status"
+  - click "Apply Filter"
+  - ---
+  - click "0000013"
+  - ---
+  - click "Reopen"
+  - ---
+  - click "Request Feedback"
+
+# Delete Issue
+# https://www.mantisbt.org/docs/master/en-US/Admin_Guide/html-desktop/#admin.pages.delete
+delete_issue:
+  - open "http://localhost:8989/login_page.php"
+  - enter "administrator" in "username"
+  - click "login"
+  - ---
+  - enter "root" in "password"
+  - click "login"
+  - ---
+  - click "View Issues"
+  - ---
+  - click "0000013"
+  - ---
+  - click "Delete"
+  - ---
+  - click "Delete Issues"
+
+# ----------------------
+# manage user
+
+# Creating User Accounts
+# https://www.mantisbt.org/docs/master/en-US/Admin_Guide/html-desktop/#admin.user.create
+
+create_user_account:
+  - open "http://localhost:8989/login_page.php"
+  - enter "administrator" in "username"
+  - click "login"
+  - ---
+  - enter "root" in "password"
+  - click "login"
+  - ---
+  - click "manage"
+  - ---
+  - click "Create New Account"
+  - ---
+  - enter "test user" in "Username"
+  - enter "test real name" in "Real name"
+  - enter "email@email.test.com" in "E-mail"
+  - select "reporter" from "Access Level"
+  - click "Create User"
+
+# Enabling/Disabling User Accounts
+# https://www.mantisbt.org/docs/master/en-US/Admin_Guide/html-desktop/#admin.user.enable
+
+disable_user_account:
+  - open "http://localhost:8989/login_page.php"
+  - enter "administrator" in "username"
+  - click "login"
+  - ---
+  - enter "root" in "password"
+  - click "login"
+  - ---
+  - click "manage"
+  - ---
+  - click "Manage Users"
+  - ---
+  - click "test user"
+  - ---
+  - click "Enabled"
+  - click "Update User"
+
+# Forgot Password and Reset Password
+# https://www.mantisbt.org/docs/master/en-US/Admin_Guide/html-desktop/#admin.user.passwordreset
+reset_password:
+  - open "http://localhost:8989/login_page.php"
+  - enter "administrator" in "username"
+  - click "login"
+  - ---
+  - enter "root" in "password"
+  - click "login"
+  - ---
+  - click "manage"
+  - ---
+  - click "Manage Users"
+  - ---
+  - click "test user"
+  - ---
+  - click "Reset Password"
+
+# Impersonating a user
+# https://www.mantisbt.org/docs/master/en-US/Admin_Guide/html-desktop/#admin.user.impersonationt
+impersonate_user:
+  - open "http://localhost:8989/login_page.php"
+  - enter "administrator" in "username"
+  - click "login"
+  - ---
+  - enter "root" in "password"
+  - click "login"
+  - ---
+  - click "manage"
+  - ---
+  - click "Manage Users"
+  - ---
+  - click "test user"
+  - ---
+  - click "Impersonate User"
+
+# Changing Password
+# https://www.mantisbt.org/docs/master/en-US/Admin_Guide/html-desktop/#admin.user.passwordchange
+change_password:
+  - open "http://localhost:8989/login_page.php"
+  - enter "administrator" in "username"
+  - click "login"
+  - ---
+  - enter "root" in "password"
+  - click "login"
+  - ---
+  - click "dropdown list of administrator"
+  - ---
+  - click "My account"
+  - ---
+  - enter "root" in "Current Passowrd"
+  - enter "root" in "New Password"
+  - enter "root" in "Confirm Password"
+  - click "Update User"
+
+# Deleting User Accounts
+# https://www.mantisbt.org/docs/master/en-US/Admin_Guide/html-desktop/#admin.user.delete
+delete_user_account:
+  - open "http://localhost:8989/login_page.php"
+  - enter "administrator" in "username"
+  - click "login"
+  - ---
+  - enter "root" in "password"
+  - click "login"
+  - ---
+  - click "manage"
+  - ---
+  - click "Manage Users"
+  - ---
+  - click "test user"
+  - ---
+  - click "Delete User"
+  - ---
+  - click "Delete Account"
+
+# User Signup
+# https://www.mantisbt.org/docs/master/en-US/Admin_Guide/html-desktop/#admin.user.signup
+# cannot test due to CAPTCHA
+
+# ----------------------
+# manage others
+
+# Create Projects
+create_projects:
+  - open "http://localhost:8989/login_page.php"
+  - enter "administrator" in "username"
+  - click "login"
+  - ---
+  - enter "root" in "password"
+  - click "login"
+  - ---
+  - click "Manage"
+  - ---
+  - click "Manage Projects"
+  - ---
+  - click "Create New Project"
+  - ---
+  - enter "new test project" in "Project Name"
+  - select "release" from "Status"
+  - click "Inherit Global Categories"
+  - enter "test description" in "Description"
+  - click "Add Project"
+
+# Create Tags
+create_tags:
+  - open "http://localhost:8989/login_page.php"
+  - enter "administrator" in "username"
+  - click "login"
+  - ---
+  - enter "root" in "password"
+  - click "login"
+  - ---
+  - click "Manage"
+  - ---
+  - click "Manage Tags"
+  - ---
+  - enter "test tag" in "Name"
+  - enter "test description" in "Tag Description"
+  - click "Create Tag"
+
+# Create Custom Fields
+create_custom_fields:
+  - open "http://localhost:8989/login_page.php"
+  - enter "administrator" in "username"
+  - click "login"
+  - ---
+  - enter "root" in "password"
+  - click "login"
+  - ---
+  - click "Manage"
+  - ---
+  - click "Manage Custom Fields"
+  - ---
+  - enter "test custom field" in "New Custom Field"
+  - click "New Custom Field"
+
+# Create Global Profiles
+create_global_profiles:
+  - open "http://localhost:8989/login_page.php"
+  - enter "administrator" in "username"
+  - click "login"
+  - ---
+  - enter "root" in "password"
+  - click "login"
+  - ---
+  - click "Manage"
+  - ---
+  - click "Manage Global Profile"
+  - ---
+  - enter "test platform" in "platform"
+  - enter "test os" in "OS"
+  - enter "test os version" in "OS Version"
+  - enter "test description" in "Additional Description"
+  - click "Add Profile"
+
+# Update Projects
+update_projects:
+  - open "http://localhost:8989/login_page.php"
+  - enter "administrator" in "username"
+  - click "login"
+  - ---
+  - enter "root" in "password"
+  - click "login"
+  - ---
+  - click "Manage"
+  - ---
+  - click "Manage Projects"
+  - ---
+  - click "test project"
+  - ---
+  - select "development" from "Status"
+  - click "Inherit Global Categories"
+  - enter "new test description" in "Description"
+  - click "Update Project"
+
+# Update Tags
+update_tags:
+  - open "http://localhost:8989/login_page.php"
+  - enter "administrator" in "username"
+  - click "login"
+  - ---
+  - enter "root" in "password"
+  - click "login"
+  - ---
+  - click "Manage"
+  - ---
+  - click "Manage Tags"
+  - ---
+  - click "test tag"
+  - ---
+  - click "Update Tag"
+  - ---
+  - select "administrator" from "Creator"
+  - enter "new test tag" in "Tag Description"
+  - click "Update Tag"
+
+# Update Custom Fields
+update_custom_fields:
+  - open "http://localhost:8989/login_page.php"
+  - enter "administrator" in "username"
+  - click "login"
+  - ---
+  - enter "root" in "password"
+  - click "login"
+  - ---
+  - click "Manage"
+  - ---
+  - click "Manage Custom Fields"
+  - ---
+  - click "test custom field"
+  - ---
+  - select "String" from "Type"
+  - enter "0" in "Default Value"
+  - select "administrator" from "Write Access"
+  - enter "100" in "Max Length"
+  - click "Update Custom Field"
+  - ---
+
+# Update Global Profiles
+update_global_profiles:
+  - open "http://localhost:8989/login_page.php"
+  - enter "administrator" in "username"
+  - click "login"
+  - ---
+  - enter "root" in "password"
+  - click "login"
+  - ---
+  - click "Manage"
+  - ---
+  - click "Manage Global Profiles"
+  - ---
+  - click "Edit Profile"
+  - select "test platform test os test os version" from "Select Profile"
+  - click "Submit"
+  - ---
+  - enter "new os" in "OS"
+  - enter "new test description" in "Additional Description"
+  - click "Update Profile"
+
+# Delete Projects
+delete_projects:
+  - open "http://localhost:8989/login_page.php"
+  - enter "administrator" in "username"
+  - click "login"
+  - ---
+  - enter "root" in "password"
+  - click "login"
+  - ---
+  - click "Manage"
+  - ---
+  - click "Manage Projects"
+  - ---
+  - click "new test project"
+  - ---
+  - click "Delete Project"
+  - ---
+  - click "Delete Project"
+
+# Delete Tags
+delete_tags:
+  - open "http://localhost:8989/login_page.php"
+  - enter "administrator" in "username"
+  - click "login"
+  - ---
+  - enter "root" in "password"
+  - click "login"
+  - ---
+  - click "Manage"
+  - ---
+  - click "Manage Tags"
+  - ---
+  - click "test tag"
+  - ---
+  - click "Delete Tag"
+  - ---
+  - click "Delete Tag"
+
+# Delete Custom Fields
+delete_custom_fields:
+  - open "http://localhost:8989/login_page.php"
+  - enter "administrator" in "username"
+  - click "login"
+  - ---
+  - enter "root" in "password"
+  - click "login"
+  - ---
+  - click "Manage"
+  - ---
+  - click "Manage Custom Fields"
+  - ---
+  - click "test custom field"
+  - ---
+  - click "Delete Custom Field"
+  - ---
+  - click "Delete Field"
+
+# Delete Global Profiles
+delete_global_profiles:
+  - open "http://localhost:8989/login_page.php"
+  - enter "administrator" in "username"
+  - click "login"
+  - ---
+  - enter "root" in "password"
+  - click "login"
+  - ---
+  - click "Manage"
+  - ---
+  - click "Manage Global Profiles"
+  - ---
+  - click "Delete Profile"
+  - select "test platform test os test os version" from "Select Profile"
+  - click "Submit"
